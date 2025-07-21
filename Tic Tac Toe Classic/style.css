@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #BED9FA;
+}
+.gameName{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 85px;
+}
+.gameName h1{
+    color: #002F5C;
+    font-size: 3rem;
+    margin-top: 15px;
+}
+.gameWinner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+}
+.gameWinner p{
+    color: #002F5C;
+    font-size: 1.5rem;
+}
+.game{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 550px;
+    gap: 20px;
+    margin: 0 auto;
+}
+.player-X{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    color: #002F5C;
+}
+.player-O{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    color: #ffffff;
+}
+.box{
+    height: 125px;
+    width: 125px;
+    background-color: #b943fd;
+    border: 1px solid #b943fd;
+    border-radius: 25px;
+}
+.restartGame{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    width: 100%;
+}
+.restartGame button{
+    width: 150px;
+    height: 55px;
+    border-radius: 25px;
+    font-size: 25px;
+    border: none;
+    color: #ffffff;
+    background: #002F5C;
+}
+.restartGame button:hover{
+    cursor: pointer;
+    background: #b943fd;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+@media(max-width: 600px){
+    .game{
+        width: 485px;
+    }
+    .player-X, .player-O{
+        font-size: 30px;
+    }
+    .gameName h1{
+        font-size: 2rem;
+    }
+    .gameWinner p{
+        font-size: 1.2rem;
+    }
+    .restartGame button{
+        width: 120px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
+@media(max-width: 400px){
+    .game{
+        width: 400px;
+        gap: 10px;
+    }
+    .player-X, .player-O{
+        font-size: 25px;
+    }
+    .gameName h1{
+        font-size: 1.5rem;
+    }
+    .gameWinner p{
+        font-size: 1rem;
+    }
+    .restartGame button{
+        width: 100px;
+        height: 35px;
+        font-size: 15px;
+    }
+}
